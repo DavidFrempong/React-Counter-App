@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+import '../../../css/index.css'
+
 export default class Button extends React.Component {
 
     constructor() {
@@ -20,7 +22,7 @@ export default class Button extends React.Component {
         const styleButton = {
             color: this.props.fontColor,
             width: '50%',
-            border: '3px solid #000000',
+            border: '5px solid #000000',
             padding: '20px',
             fontSize: '2rem',
             fontWeight: '900',
@@ -35,7 +37,9 @@ export default class Button extends React.Component {
             <div className={`button ${this.props.action}`}
                 style={styleButton}
                 onMouseEnter={this.toggleHover}
-                onMouseLeave={this.toggleHover}>
+                onMouseLeave={this.toggleHover}
+                onClick={this.props.trigger}
+                >
                 {this.props.children}
             </div>
         )

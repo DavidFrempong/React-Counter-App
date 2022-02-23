@@ -5,6 +5,7 @@ import Counter from './components/Counter/counter.js'
 import Button from './components/Counter/button.js'
 
 import '../css/style.css'
+import '../css/index.css'
 
 export default class App extends React.Component {
 
@@ -18,7 +19,7 @@ export default class App extends React.Component {
   render () {
     return (
        <div id="App">
-         <Counter />
+         <Counter status="manual"/>
        </div>
       )
   }
