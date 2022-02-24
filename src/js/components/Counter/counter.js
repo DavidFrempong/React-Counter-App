@@ -6,6 +6,10 @@ import '../../../css/index.css'
 
 import Button from './button.js';
 
+let user = {
+  name: 'David'
+}
+
 export default class Counter extends React.Component {
 
   constructor() {
@@ -81,7 +85,7 @@ export default class Counter extends React.Component {
   counterRun = () => {
      setInterval(() => {
        this.setState({
-         currentNumber: this.state.currentNumber + 10
+         currentNumber: this.state.currentNumber + 1
        })
      }, 1000);
   }

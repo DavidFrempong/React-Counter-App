@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 import Counter from './components/Counter/counter.js'
-import Button from './components/Counter/button.js'
+import Immutable from './components/immutable/immutable.js'
+import Practice from './components/immutable/practice.js';
 
 import '../css/style.css'
 import '../css/index.css'
@@ -19,7 +20,8 @@ export default class App extends React.Component {
   render () {
     return (
        <div id="App">
-         <Counter status="manual"/>
+         <Practice />
+         {/* <Counter status="manual"/> */}
        </div>
       )
   }

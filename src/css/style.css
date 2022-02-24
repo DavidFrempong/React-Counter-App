@@ -1,3 +1,30 @@
 .counter{
     padding-top: 100px;
 }
+
+#immutable{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box{
+background: black;
+width: 250px;
+height: 250px;
+margin: 0 auto;
+}
+
+.box.active{
+    background: rgb(68, 18, 206);
+}
+
+.button{
+border-radius: 4px;
+background: rgb(0, 183, 255);
+padding: 10px 20px;
+margin: 20px 0;
+color: white;
+cursor: pointer;
+}
