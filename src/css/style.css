@@ -1,30 +1,126 @@
-.counter{
+@import "billsApp";
+
+body{
+    box-sizing: border-box;
+}
+
+.counter {
     padding-top: 100px;
 }
 
-#immutable{
+#immutable {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
     text-align: center;
 }
 
-.box{
-background: black;
-width: 250px;
-height: 250px;
-margin: 0 auto;
+.box {
+    background: black;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
 }
 
-.box.active{
+.box.active {
     background: rgb(68, 18, 206);
 }
 
-.button{
-border-radius: 4px;
-background: rgb(0, 183, 255);
-padding: 10px 20px;
-margin: 20px 0;
-color: white;
-cursor: pointer;
+.button {
+    border-radius: 4px;
+    background: rgb(0, 183, 255);
+    padding: 10px 20px;
+    margin: 20px 0;
+    color: white;
+    cursor: pointer;
+}
+
+#BillsApp {
+    background: rgb(9, 6, 60);
+    background: linear-gradient(
+        90deg,
+        #36d1dc 0%, #5b86e5 100%
+    );
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#allbills {
+}
+
+.container {
+    /* width: 100%; */
+    padding: 0 20px;
+}
+
+.bills-list {
+    background: white;
+    border-radius: 20px;
+}
+
+.total-bills {
+    color: #ffffff;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.text {
+    font-size: 1.3rem;
+}
+
+.number {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.bill {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #acacac;
+    padding: 20px 20px;
+    color: #000000;
+}
+
+.company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 20px;
+    color: rgb(43, 43, 43);
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(99, 99, 99);
 }
