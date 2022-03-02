@@ -15,7 +15,7 @@ export default class Header extends React.Component {
     render() {
         return (
             (<header>
-                <h2>Bills App</h2>
+                <h2>Zato</h2>
             </header>)
         )
     }
