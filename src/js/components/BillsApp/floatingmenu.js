@@ -48,7 +48,7 @@ export default class FloatingMenu extends React.Component {
                     <div className='text'>Settings</div>
                 </div>
                 <div className='link add-button'>
-                    <div className='add-button'>
+                    <div className='add-button' onClick={this.props.clickedAddBillButton}>
                         <div className='icon'>
                             <img src={Add} />
                         </div>
