@@ -25,10 +25,10 @@ export default class App extends React.Component {
   render () {
     return (
        <div id="App">
-         {/* < BillsApp /> */}
+         < BillsApp />
          {/* <Advanced /> */}
          {/* <Topics /> */}
-         <Hooks />
+         {/* <Hooks /> */}
          {/* <Box /> */}
        </div>
       )
